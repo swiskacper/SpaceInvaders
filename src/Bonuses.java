@@ -22,16 +22,16 @@ public class Bonuses {
 
     String getPath(){
         if(numberOfBonus==0){
-            path="D:\\SpaceShipInvader\\images&sounds\\serce.png";
+            path="images&sounds\\serce.png";
         }
         if(numberOfBonus==1){
-            path="D:\\SpaceShipInvader\\images&sounds\\speed.png";
+            path="images&sounds\\speed.png";
         }
         if(numberOfBonus==2){
-            path="D:\\SpaceShipInvader\\images&sounds\\predkośćiomiez.png";
+            path="images&sounds\\predkośćiomiez.png";
         }
         if(numberOfBonus==3){
-            path="D:\\SpaceShipInvader\\images&sounds\\skała.png";
+            path="images&sounds\\skała.png";
         }
         return path;
     }

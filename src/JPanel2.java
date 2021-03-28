@@ -18,7 +18,7 @@ public class JPanel2 extends JPanel {
         Image img = null;
 
         try {
-            img = ImageIO.read(new File("D:\\SpaceShipInvader\\images&sounds\\kosmos.jpg"));
+            img = ImageIO.read(new File("images&sounds\\kosmos.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -28,7 +28,7 @@ public class JPanel2 extends JPanel {
 
             try {
 
-                img = ImageIO.read(new File("D:\\SpaceShipInvader\\images&sounds\\kaczkaW2.png"));
+                img = ImageIO.read(new File("images&sounds\\kaczkaW2.png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }

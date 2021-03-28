@@ -15,7 +15,7 @@ public class Boss {
     float elapsedTimeSec;
     long elapsedTimeMillis;
     boolean activated;
-    AudioPlayer audio=new AudioPlayer("D:\\SpaceShipInvader\\images&sounds\\13_Boss.au");
+    AudioPlayer audio=new AudioPlayer("images&sounds\\13_Boss.au");
 
     ArrayList<String> shots=new ArrayList<>();
     public Boss(int x, int y, int health, boolean activated) throws UnsupportedAudioFileException, IOException, LineUnavailableException {

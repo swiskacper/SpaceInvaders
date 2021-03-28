@@ -13,7 +13,7 @@ public class ActionsKeyboard implements KeyListener {
     long gameTime;
     int numberOfShots;
     double timeWithoutShoot=1;
-    ShortAudio audio=new ShortAudio("D:\\SpaceShipInvader\\images&sounds\\AnyConv.com__shoot.au");
+    ShortAudio audio=new ShortAudio("images&sounds\\AnyConv.com__shoot.au");
 
 
 

@@ -80,7 +80,7 @@ public class Highscore implements ActionListener {
     }
 
     public static void readingFromFile(ArrayList<String> nameList,ArrayList <Integer> points) throws FileNotFoundException {
-        File file = new File("C:\\Users\\48605\\Desktop\\rank.txt");
+        File file = new File("rank.txt");
         Scanner in = new Scanner(file);
         String[] tab;
         while (in.hasNextLine()) {
@@ -92,7 +92,7 @@ public class Highscore implements ActionListener {
     }
 
     public static void saving(ArrayList<String> nameList,ArrayList <Integer> points) throws FileNotFoundException {
-        PrintWriter save = new PrintWriter("C:\\Users\\48605\\Desktop\\rank.txt");
+        PrintWriter save = new PrintWriter("rank.txt");
         Set<String> set = new TreeSet();
         ArrayList<Integer> idx = new ArrayList<>();
         for (int i = 0; i < nameList.size(); i++) {

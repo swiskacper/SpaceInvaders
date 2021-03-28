@@ -13,7 +13,7 @@ public class Starter {
 
     }
     void start() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-        AudioPlayer player=new AudioPlayer("D:\\SpaceShipInvader\\images&sounds\\01_Title-Screen.au");
+        AudioPlayer player=new AudioPlayer("images&sounds\\01_Title-Screen.au");
 
         JFrame window=new JFrame("Space");
 
@@ -23,7 +23,7 @@ public class Starter {
         window.add(panel);
         Font font= new Font("Verdana", Font.BOLD, 25);
 
-        ImageIcon icon=new ImageIcon("D:\\SpaceShipInvader\\images&sounds\\kosmos2.jpg");
+        ImageIcon icon=new ImageIcon("images&sounds\\kosmos2.jpg");
 
         JButton difficultyButton=getDifficultyButton(window,font,icon);
         JButton playButton = getPlayButton(player, window, font, icon,difficultyButton);

@@ -233,7 +233,7 @@ public class Ducks {
     void movingDucksShots(Graphics g, MyJPanel myJPanel) {
           for (int i = 0; i < myJPanel.ducksShots.size(); i++) {
               myJPanel.coords2 = myJPanel.ducksShots.get(i).split(",");
-              myJPanel.DrawImage(g,"D:\\SpaceShipInvader\\images&sounds\\laser.png",Integer.parseInt(myJPanel.coords2[0]),Integer.parseInt(myJPanel.coords2[1]));
+              myJPanel.DrawImage(g,"images&sounds\\laser.png",Integer.parseInt(myJPanel.coords2[0]),Integer.parseInt(myJPanel.coords2[1]));
 
               int a = Integer.parseInt(myJPanel.coords2[1]) + myJPanel.speed;
               myJPanel.coords2[1] = String.valueOf(a);

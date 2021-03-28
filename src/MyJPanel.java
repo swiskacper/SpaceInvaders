@@ -69,7 +69,7 @@ public class MyJPanel extends JPanel implements ActionListener {
             ducks.movingDucksShots(g, this);
 
         if(spaceShip.alive)
-            DrawImage(g,"D:\\SpaceShipInvader\\images&sounds\\statekKos22.png",spaceShip.x,spaceShip.y);
+            DrawImage(g,"images&sounds\\statekKos22.png",spaceShip.x,spaceShip.y);
 
         for(int i=0;i<shots.size();i++){
             shotting(g, i);
@@ -93,7 +93,7 @@ public class MyJPanel extends JPanel implements ActionListener {
         if(spaceShip.lives>0){
             for(int i=0;i<spaceShip.lives;i++) {
                 if(i<=6)
-                    DrawImage(g,"D:\\SpaceShipInvader\\images&sounds\\serce.png",950 - (i * 50),700);
+                    DrawImage(g,"images&sounds\\serce.png",950 - (i * 50),700);
 
             }
 
@@ -130,7 +130,7 @@ public class MyJPanel extends JPanel implements ActionListener {
     }
 
     private void drawBackground(Graphics g) {
-        DrawImage(g,"D:\\SpaceShipInvader\\images&sounds\\kosmos4.jpg",0,0);
+        DrawImage(g,"images&sounds\\kosmos4.jpg",0,0);
 
         Font font = new Font("Verdana", Font.BOLD, 20);
         setFont(font);
@@ -143,11 +143,11 @@ public class MyJPanel extends JPanel implements ActionListener {
 
     private void moveDucks(Graphics g, int i) {
         duckCoords = ducks.ducksCoordinates.get(i).split(",");
-        DrawImage(g,"D:\\SpaceShipInvader\\images&sounds\\kaczkaW2.png",Integer.parseInt(duckCoords[0]),Integer.parseInt(duckCoords[1]));
+        DrawImage(g,"images&sounds\\kaczkaW2.png",Integer.parseInt(duckCoords[0]),Integer.parseInt(duckCoords[1]));
     }
 
     private void shotting(Graphics g, int i) {
-        DrawImage(g,"D:\\SpaceShipInvader\\images&sounds\\laser.png",shots.get(i).getX(),shots.get(i).getY()-50);
+        DrawImage(g,"images&sounds\\laser.png",shots.get(i).getX(),shots.get(i).getY()-50);
         shots.get(i).setY(shots.get(i).getY()-speed2);
     }
 
@@ -160,7 +160,7 @@ public class MyJPanel extends JPanel implements ActionListener {
         g.drawString("BOSS HEALTH: ", 80,40);
         g.setColor(Color.red);
         g.fillRect(300,20,boss.health*3,25);
-        DrawImage(g,"D:\\SpaceShipInvader\\images&sounds\\KaczkaBoss.png",boss.x,boss.y);
+        DrawImage(g,"images&sounds\\KaczkaBoss.png",boss.x,boss.y);
         boss.setMoveX(speed);
         boss.setMoveY(speed);
         boss.moveBoss();
@@ -171,7 +171,7 @@ public class MyJPanel extends JPanel implements ActionListener {
         ducksShots=boss.getShots();
         for(int i=0;i<ducksShots.size();i++){
             coordss=ducksShots.get(i).split(",");
-            DrawImage(g,"D:\\SpaceShipInvader\\images&sounds\\laser.png",(Integer.parseInt(coordss[0])),(Integer.parseInt(coordss[1])));
+            DrawImage(g,"images&sounds\\laser.png",(Integer.parseInt(coordss[0])),(Integer.parseInt(coordss[1])));
 
             boss.moveBossShot(coordss, i, this);
 
@@ -224,7 +224,7 @@ public class MyJPanel extends JPanel implements ActionListener {
         JFrame window2=new JFrame("Results");
 
         int points=spaceShip.countPoints(actionsKeyboard.getGameTime(),actionsKeyboard.getNumberOfShots()-death.getLostLifes(),death.getGodShots(),death.getLostLifes());
-        ImageIcon icon=new ImageIcon("D:\\SpaceShipInvader\\images&sounds\\kosmos.jpg");
+        ImageIcon icon=new ImageIcon("images&sounds\\kosmos.jpg");
 
         JLabel label=new JLabel();
         label.setIcon(icon);
@@ -319,7 +319,7 @@ public class MyJPanel extends JPanel implements ActionListener {
     }
 
     void setBonuses() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-        ShortAudio audio=new ShortAudio("D:\\SpaceShipInvader\\images&sounds\\dp_superpac_wakka.au");
+        ShortAudio audio=new ShortAudio("images&sounds\\dp_superpac_wakka.au");
         if(numberOfBonus==0){
             audio.play();
             if(spaceShip.lives<=7)

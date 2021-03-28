@@ -17,9 +17,9 @@ public class Death {
     ArrayList<Shots> shots = new ArrayList<>();
     ArrayList <String> ducksShots=new ArrayList<>();
     Boss boss;
-    ShortAudio audioDuckDeath=new ShortAudio("D:\\SpaceShipInvader\\images&sounds\\ringt-nature-duck1.au");
-    ShortAudio audioSpaceShipDeath=new ShortAudio("D:\\SpaceShipInvader\\images&sounds\\Dinosaur-Roar-SoundBible.com-605392672.au");
-    ShortAudio audioBossDeath=new ShortAudio("D:\\SpaceShipInvader\\images&sounds\\Horse-Angry-Neigh-And-Breathing-www.fesliyanstudios.com.au");
+    ShortAudio audioDuckDeath=new ShortAudio("images&sounds\\ringt-nature-duck1.au");
+    ShortAudio audioSpaceShipDeath=new ShortAudio("images&sounds\\Dinosaur-Roar-SoundBible.com-605392672.au");
+    ShortAudio audioBossDeath=new ShortAudio("images&sounds\\Horse-Angry-Neigh-And-Breathing-www.fesliyanstudios.com.au");
 
     public Death(SpaceShip spaceShip, Ducks duck, ArrayList<Shots> shots, ArrayList <String> ducksShots, Boss boss) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         this.spaceShip = spaceShip;
