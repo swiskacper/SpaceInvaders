@@ -1,3 +1,1 @@
-# SpaceShipInvaders
 
-Simply SpaceShipInvader game
